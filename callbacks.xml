@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet type="text/xsl" href="callbacks.xsl"?>
+
+<plugin name="LDraw" author="federico.ferri.it@gmail.com">
+    <description></description>
+    <command name="import" c-name="import_">
+        <description>Import a LDraw file.</description>
+        <params>
+            <param name="filePath" type="string">
+                <description>path to the LDraw file</description>
+            </param>
+        </params>
+        <return>
+            <param name="handles" type="table" item-type="int">
+                <description>handles to the imported shapes</description>
+            </param>
+        </return>
+    </command>
+</plugin>
