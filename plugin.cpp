@@ -132,12 +132,12 @@ public:
             throw sim::exception("failed to create render model: %s", ldrResultToString(result));
 
         const double ldr2m = 0.0004;
-        const Eigen::Matrix4d T {
-            {1, 0, 0, 0},
-            {0, 0, 1, 0},
-            {0, -1, 0, 0},
-            {0, 0, 0, 1}
-        };
+        const Eigen::Matrix4d T = (Eigen::Matrix4d() <<
+            1, 0, 0, 0,
+            0, 0, 1, 0,
+            0, -1, 0, 0,
+            0, 0, 0, 1
+        ).finished();
 
         for(uint32_t i = 0; i < model->num_instances; i++)
         {
@@ -167,12 +167,13 @@ public:
             if(n.rfind(*ldrawDir, 0) == 0)
                 n = n.substr(ldrawDir->length() + 1);
             sim::setObjectAlias(handle, n);
-            Eigen::Matrix4d t {
-                {transform.values[0], transform.values[4], transform.values[8],  ldr2m * transform.values[12]},
-                {transform.values[1], transform.values[5], transform.values[9],  ldr2m * transform.values[13]},
-                {transform.values[2], transform.values[6], transform.values[10], ldr2m * transform.values[14]},
-                {0, 0, 0, 1}
-            };
+            Eigen::Matrix4d t;
+            t = (Eigen::Matrix4d() <<
+                transform.values[0], transform.values[4], transform.values[8],  ldr2m * transform.values[12],
+                transform.values[1], transform.values[5], transform.values[9],  ldr2m * transform.values[13],
+                transform.values[2], transform.values[6], transform.values[10], ldr2m * transform.values[14],
+                0, 0, 0, 1
+            ).finished();
             t = T * t;
             double m[12] = {
                 t(0, 0), t(0, 1), t(0, 2), t(0, 3),
