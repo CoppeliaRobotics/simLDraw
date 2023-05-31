@@ -20,7 +20,7 @@ using namespace std;
 class Plugin : public sim::Plugin
 {
 public:
-    void onStart()
+    void onInit()
     {
         if(!registerScriptStuff())
             throw sim::exception("failed to register script stuff");

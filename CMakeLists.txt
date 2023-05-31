@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(simExtLDraw)
+project(simLDraw)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_MACOSX_RPATH 1)
@@ -34,6 +34,6 @@ coppeliasim_generate_stubs(${CMAKE_CURRENT_BINARY_DIR}/generated XML_FILE ${CMAK
 
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h)
 
-coppeliasim_add_plugin(simExtLDraw SOURCES plugin.cpp ${ldrawloader_SOURCE_DIR}/src/ldrawloader.cpp)
-target_link_libraries(simExtLDraw Eigen3::Eigen)
+coppeliasim_add_plugin(simLDraw SOURCES plugin.cpp ${ldrawloader_SOURCE_DIR}/src/ldrawloader.cpp)
+target_link_libraries(simLDraw Eigen3::Eigen)
 coppeliasim_add_addon("simAddOnLDraw importer.lua")

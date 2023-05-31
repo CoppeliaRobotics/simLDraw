@@ -1,3 +1,5 @@
+simLDraw=require'simLDraw'
+
 function sysCall_info()
     return {autoStart=false,menu='Importers\nLDraw importer...'}
 end
