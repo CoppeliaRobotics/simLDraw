@@ -1,5 +1,5 @@
-local simLDraw=loadPlugin'simLDraw'
+local simLDraw=loadPlugin'simLDraw';
 
-(require'simLDraw-typecheck')(simLDraw)
+;(require'simLDraw-typecheck')(simLDraw)
 
 return simLDraw
