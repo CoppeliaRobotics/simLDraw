@@ -36,4 +36,4 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/sourceCode/config.h.in ${CMAKE_CURREN
 
 coppeliasim_add_plugin(simLDraw SOURCES sourceCode/plugin.cpp ${ldrawloader_SOURCE_DIR}/src/ldrawloader.cpp)
 target_link_libraries(simLDraw PRIVATE Eigen3::Eigen)
-coppeliasim_add_addon("addOns/simAddOnLDraw importer.lua")
+coppeliasim_add_addon("addOns/LDraw importer.lua")
