@@ -30,10 +30,10 @@ endif()
 include_directories(${CMAKE_CURRENT_BINARY_DIR}/generated)
 include_directories(${ldrawloader_SOURCE_DIR}/src)
 
-coppeliasim_generate_stubs(${CMAKE_CURRENT_BINARY_DIR}/generated XML_FILE ${CMAKE_CURRENT_SOURCE_DIR}/callbacks.xml LUA_FILE ${CMAKE_CURRENT_SOURCE_DIR}/simLDraw.lua)
+coppeliasim_generate_stubs(${CMAKE_CURRENT_BINARY_DIR}/generated XML_FILE ${CMAKE_CURRENT_SOURCE_DIR}/sourceCode/callbacks.xml LUA_FILE ${CMAKE_CURRENT_SOURCE_DIR}/lua/simLDraw.lua)
 
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/sourceCode/config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h)
 
-coppeliasim_add_plugin(simLDraw SOURCES plugin.cpp ${ldrawloader_SOURCE_DIR}/src/ldrawloader.cpp)
+coppeliasim_add_plugin(simLDraw SOURCES sourceCode/plugin.cpp ${ldrawloader_SOURCE_DIR}/src/ldrawloader.cpp)
 target_link_libraries(simLDraw PRIVATE Eigen3::Eigen)
-coppeliasim_add_addon("simAddOnLDraw importer.lua")
+coppeliasim_add_addon("addOns/simAddOnLDraw importer.lua")
