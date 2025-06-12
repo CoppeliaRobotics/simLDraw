@@ -1,12 +1,11 @@
-sim = require 'sim'
-
 function sysCall_info()
     return {autoStart = false, menu = 'Importers\nLDraw importer...'}
 end
 
 function sysCall_init()
-    simUI = require 'simUI'
-    simLDraw = require 'simLDraw'
+    local sim = require 'sim'
+    local simUI = require 'simUI'
+    local simLDraw = require 'simLDraw'
     local scenePath = sim.getStringParam(sim.stringparam_scene_path)
     local fileNames = simUI.fileDialog(
                          simUI.filedialog_type.load, 'Open LDraw file...', scenePath, '',
