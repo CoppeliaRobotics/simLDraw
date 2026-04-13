@@ -10,7 +10,7 @@
 
 #include <ldrawloader.h>
 
-#include <simPlusPlus/Plugin.h>
+#include <simPlusPlus-2/Plugin.h>
 #include "plugin.h"
 #include "stubs.h"
 #include "config.h"
@@ -28,29 +28,29 @@ public:
         setExtVersion("LDraw");
         setBuildDate(BUILD_DATE);
 
-        auto ldrawDir = sim::getNamedStringParam("ldraw.dir");
+        auto ldrawDir = sim::getStringProperty(sim_handle_app, "customData.ldraw.dir", {});
         if(!ldrawDir)
         {
             const char* home = std::getenv("HOME");
-            int plat = sim::getInt32Param(sim_intparam_platform);
+            int plat = sim::getIntProperty(sim_handle_app, "platform");
             if(plat == 0)
             {
                 // Windows
                 home = std::getenv("UserProfile");
                 if(home)
-                    sim::setNamedStringParam("ldraw.dir", std::string(home) + "/Documents/LDraw");
+                    sim::setStringProperty(sim_handle_app, "customData.ldraw.dir", std::string(home) + "/Documents/LDraw");
             }
             else if(plat == 1)
             {
                 // Mac
                 if(home)
-                    sim::setNamedStringParam("ldraw.dir", std::string(home) + "/Documents/ldraw");
+                    sim::setStringProperty(sim_handle_app, "customData.ldraw.dir", std::string(home) + "/Documents/ldraw");
             }
             else if(plat == 2)
             {
                 // Linux
                 if(home)
-                    sim::setNamedStringParam("ldraw.dir", std::string(home) + "/ldraw");
+                    sim::setStringProperty(sim_handle_app, "customData.ldraw.dir", std::string(home) + "/ldraw");
             }
         }
     }
@@ -96,9 +96,9 @@ public:
 
     void import_(import__in *in, import__out *out)
     {
-        auto ldrawDir = sim::getNamedStringParam("ldraw.dir");
+        auto ldrawDir = sim::getStringProperty(sim_handle_app, "customData.ldraw.dir", {});
         if(!ldrawDir)
-            throw sim::exception("the LDraw directory (ldraw.dir) is not set");
+            throw sim::exception("the LDraw directory (ldraw.dir) is not set; set it via app.customData.ldraw.dir = '...'");
         if(!dirExists(ldrawDir->c_str()))
             throw sim::exception("the LDraw directory (ldraw.dir=\"%s\") is not a valid directory", *ldrawDir);
 
