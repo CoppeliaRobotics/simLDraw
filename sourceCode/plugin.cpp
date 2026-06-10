@@ -25,9 +25,6 @@ public:
         if(!registerScriptStuff())
             throw sim::exception("failed to register script stuff");
 
-        setExtVersion("LDraw");
-        setBuildDate(BUILD_DATE);
-
         auto ldrawDir = sim::getStringProperty(sim_handle_app, "customData.ldraw.dir", {});
         if(!ldrawDir)
         {
