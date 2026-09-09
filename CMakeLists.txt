@@ -22,10 +22,7 @@ FetchContent_Declare(ldrawloader
     GIT_REPOSITORY https://github.com/fferri/ldrawloader
     SOURCE_DIR ${CMAKE_CURRENT_BINARY_DIR}/ldrawloader
 )
-FetchContent_GetProperties(ldrawloader)
-if(NOT ldrawloader_POPULATED)
-    FetchContent_Populate(ldrawloader)
-endif()
+FetchContent_MakeAvailable(ldrawloader)
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR}/generated)
 include_directories(${ldrawloader_SOURCE_DIR}/src)
