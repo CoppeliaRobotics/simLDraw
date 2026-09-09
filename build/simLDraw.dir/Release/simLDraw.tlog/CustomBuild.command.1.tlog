@@ -1,0 +1,20 @@
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\CMAKEFILES\AA6450FDEACB7EC49186970E610BE4FC\STUBS.CPP.RULE
+setlocal
+C:\Python310\python.exe d:/coppeliaRobotics/coppeliaSim/programming/include/simStubsGen/generate.py --verbose --xml-file D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/sourceCode/callbacks.xml --gen-all D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/generated --lua-file D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/lua/simLDraw.lua
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/coppeliaRobotics/coppeliaSim/programming/simLDraw -BD:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build --check-stamp-file D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/ldrawloader-populate"
+		},
+		{
+			"file" : "D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/49c5ed11db3f74a4ef78213c88a310e7/ldrawloader-populate.rule"
+		},
+		{
+			"file" : "D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/c8a49a1e456613c286938386db3b4a84/ldrawloader-populate-complete.rule"
+		},
+		{
+			"file" : "D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/21e276bacb8413ef2887f9a23cebe0d2/ldrawloader-populate-build.rule"
+		},
+		{
+			"file" : "D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/21e276bacb8413ef2887f9a23cebe0d2/ldrawloader-populate-configure.rule"
+		},
+		{
+			"file" : "D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/21e276bacb8413ef2887f9a23cebe0d2/ldrawloader-populate-download.rule"
+		},
+		{
+			"file" : "D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/21e276bacb8413ef2887f9a23cebe0d2/ldrawloader-populate-install.rule"
+		},
+		{
+			"file" : "D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/21e276bacb8413ef2887f9a23cebe0d2/ldrawloader-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/21e276bacb8413ef2887f9a23cebe0d2/ldrawloader-populate-patch.rule"
+		},
+		{
+			"file" : "D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/21e276bacb8413ef2887f9a23cebe0d2/ldrawloader-populate-test.rule"
+		},
+		{
+			"file" : "D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/21e276bacb8413ef2887f9a23cebe0d2/ldrawloader-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ldrawloader-populate"
+		],
+		"name" : "ldrawloader-populate"
+	}
+}

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin name="simLDraw" info="LDraw importer plugin" author="federico.ferri.it@gmail.com">
+    <description />
+    <command name="import" c-name="import_">
+        <description>Import a LDraw file.</description>
+        <params>
+            <param name="filePath" type="string">
+                <description>path to the LDraw file</description>
+            </param>
+        </params>
+        <return>
+            <param name="handles" type="table" item-type="int">
+                <description>handles to the imported shapes</description>
+            </param>
+        </return>
+    </command>
+</plugin>

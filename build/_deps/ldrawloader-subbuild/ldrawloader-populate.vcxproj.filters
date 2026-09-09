@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-subbuild\CMakeFiles\21e276bacb8413ef2887f9a23cebe0d2\ldrawloader-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-subbuild\CMakeFiles\21e276bacb8413ef2887f9a23cebe0d2\ldrawloader-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-subbuild\CMakeFiles\21e276bacb8413ef2887f9a23cebe0d2\ldrawloader-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-subbuild\CMakeFiles\21e276bacb8413ef2887f9a23cebe0d2\ldrawloader-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-subbuild\CMakeFiles\21e276bacb8413ef2887f9a23cebe0d2\ldrawloader-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-subbuild\CMakeFiles\21e276bacb8413ef2887f9a23cebe0d2\ldrawloader-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-subbuild\CMakeFiles\21e276bacb8413ef2887f9a23cebe0d2\ldrawloader-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-subbuild\CMakeFiles\21e276bacb8413ef2887f9a23cebe0d2\ldrawloader-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-subbuild\CMakeFiles\c8a49a1e456613c286938386db3b4a84\ldrawloader-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-subbuild\CMakeFiles\49c5ed11db3f74a4ef78213c88a310e7\ldrawloader-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-subbuild\CMakeFiles\ldrawloader-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3C31EB11-946B-3073-B627-839BEF167232}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

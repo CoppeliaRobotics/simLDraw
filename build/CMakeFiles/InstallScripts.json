@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

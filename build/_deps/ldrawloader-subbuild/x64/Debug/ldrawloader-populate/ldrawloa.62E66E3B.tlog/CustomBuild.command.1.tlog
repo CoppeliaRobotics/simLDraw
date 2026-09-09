@@ -1,0 +1,150 @@
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\_DEPS\LDRAWLOADER-SUBBUILD\CMAKEFILES\21E276BACB8413EF2887F9A23CEBE0D2\LDRAWLOADER-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/ldrawloader-populate-prefix/tmp/ldrawloader-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/ldrawloader-populate-prefix/src/ldrawloader-populate-stamp/Debug/ldrawloader-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\_DEPS\LDRAWLOADER-SUBBUILD\CMAKEFILES\21E276BACB8413EF2887F9A23CEBE0D2\LDRAWLOADER-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/ldrawloader-populate-prefix/tmp/ldrawloader-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/ldrawloader-populate-prefix/src/ldrawloader-populate-stamp/Debug/ldrawloader-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\_DEPS\LDRAWLOADER-SUBBUILD\CMAKEFILES\21E276BACB8413EF2887F9A23CEBE0D2\LDRAWLOADER-POPULATE-UPDATE.RULE
+setlocal
+cd D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\ldrawloader
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/ldrawloader-populate-prefix/tmp/ldrawloader-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\_DEPS\LDRAWLOADER-SUBBUILD\CMAKEFILES\21E276BACB8413EF2887F9A23CEBE0D2\LDRAWLOADER-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/ldrawloader-populate-prefix/src/ldrawloader-populate-stamp/Debug/ldrawloader-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\_DEPS\LDRAWLOADER-SUBBUILD\CMAKEFILES\21E276BACB8413EF2887F9A23CEBE0D2\LDRAWLOADER-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/ldrawloader-populate-prefix/src/ldrawloader-populate-stamp/Debug/ldrawloader-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\_DEPS\LDRAWLOADER-SUBBUILD\CMAKEFILES\21E276BACB8413EF2887F9A23CEBE0D2\LDRAWLOADER-POPULATE-BUILD.RULE
+setlocal
+cd D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/ldrawloader-populate-prefix/src/ldrawloader-populate-stamp/Debug/ldrawloader-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\_DEPS\LDRAWLOADER-SUBBUILD\CMAKEFILES\21E276BACB8413EF2887F9A23CEBE0D2\LDRAWLOADER-POPULATE-INSTALL.RULE
+setlocal
+cd D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/ldrawloader-populate-prefix/src/ldrawloader-populate-stamp/Debug/ldrawloader-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\_DEPS\LDRAWLOADER-SUBBUILD\CMAKEFILES\21E276BACB8413EF2887F9A23CEBE0D2\LDRAWLOADER-POPULATE-TEST.RULE
+setlocal
+cd D:\coppeliaRobotics\coppeliaSim\programming\simLDraw\build\_deps\ldrawloader-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/ldrawloader-populate-prefix/src/ldrawloader-populate-stamp/Debug/ldrawloader-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\_DEPS\LDRAWLOADER-SUBBUILD\CMAKEFILES\C8A49A1E456613C286938386DB3B4A84\LDRAWLOADER-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/Debug/ldrawloader-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/ldrawloader-populate-prefix/src/ldrawloader-populate-stamp/Debug/ldrawloader-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\_DEPS\LDRAWLOADER-SUBBUILD\CMAKEFILES\49C5ED11DB3F74A4EF78213C88A310E7\LDRAWLOADER-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\_DEPS\LDRAWLOADER-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild -BD:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild --check-stamp-file D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^D:\COPPELIAROBOTICS\COPPELIASIM\PROGRAMMING\SIMLDRAW\BUILD\_DEPS\LDRAWLOADER-SUBBUILD\CMAKEFILES\49C5ED11DB3F74A4EF78213C88A310E7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild -BD:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/coppeliaRobotics/coppeliaSim/programming/simLDraw/build/_deps/ldrawloader-subbuild/ldrawloader-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

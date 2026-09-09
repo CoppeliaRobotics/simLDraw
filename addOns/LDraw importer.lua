@@ -3,7 +3,7 @@ function sysCall_info()
 end
 
 function sysCall_init()
-    local sim = require 'sim'
+    local sim = require 'sim-1'
     local simUI = require 'simUI'
     local simLDraw = require 'simLDraw'
     local scenePath = sim.getStringParam(sim.stringparam_scene_path)
